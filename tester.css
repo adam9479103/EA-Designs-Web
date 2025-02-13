@@ -233,6 +233,9 @@ footer {
 
     .ea_designs {
         max-height: 70px;
+        max-width: auto;
+        padding: 0;
+        margin: 0;
     }
 
     nav {
