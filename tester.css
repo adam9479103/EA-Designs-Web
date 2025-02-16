@@ -34,6 +34,7 @@ header {
     align-items: center;
     gap: 1rem;
     flex-wrap: nowrap; /* Prevent wrapping */
+    justify-content: flex-end; /* Align header to the right */
 }
 
 .ea_designs {
@@ -42,7 +43,7 @@ header {
     padding: 0;
     display: inline-block;
     vertical-align: middle;
-    margin-right: auto; /* Push logo to the left */
+    margin-left: auto; /* Push logo to the right */
 }
 
 .header {
@@ -246,11 +247,12 @@ footer {
         flex-wrap: wrap;
         gap: 0.5rem;
         padding: 0.5rem;
+        justify-content: center; /* Center items on mobile */
     }
 
     .ea_designs {
         max-height: 50px;
-        margin-right: 0; /* Reset margin-right for mobile */
+        margin-left: 0; /* Reset margin-left for mobile */
     }
 
     nav {
@@ -323,7 +325,7 @@ footer {
 }
 
 .project-image-container {
-    height: 350px;
+    height: 500px; /* Increased height for cabinetry page */
     overflow: hidden;
 }
 
@@ -367,7 +369,7 @@ footer {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 0;
-    height: 500px;
+    height: 600px; /* Increased height for cabinetry page */
 }
 
 .cabinet-project-images img {
