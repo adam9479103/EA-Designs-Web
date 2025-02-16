@@ -325,7 +325,7 @@ footer {
 }
 
 .project-image-container {
-    height: 500px; /* Increased height for cabinetry page */
+    height: 600px; /* Taller images for cabinetry page */
     overflow: hidden;
 }
 
@@ -369,7 +369,7 @@ footer {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 0;
-    height: 600px; /* Increased height for cabinetry page */
+    height: 700px; /* Taller images for cabinetry page */
 }
 
 .cabinet-project-images img {
@@ -384,6 +384,37 @@ footer {
 .cabinet-project-images:has(img:only-child) {
     display: block;
     grid-template-columns: 1fr;
+}
+
+/* Responsive Adjustments for Cabinetry Images */
+@media (max-width: 1024px) {
+    .project-image-container {
+        height: 500px; /* Slightly shorter on tablets */
+    }
+
+    .cabinet-project-images {
+        height: 600px; /* Slightly shorter on tablets */
+    }
+}
+
+@media (max-width: 768px) {
+    .project-image-container {
+        height: 400px; /* Shorter on smaller devices */
+    }
+
+    .cabinet-project-images {
+        height: 500px; /* Shorter on smaller devices */
+    }
+}
+
+@media (max-width: 480px) {
+    .project-image-container {
+        height: 300px; /* Shorter on mobile */
+    }
+
+    .cabinet-project-images {
+        height: 400px; /* Shorter on mobile */
+    }
 }
 
 /* Project Showcase Styles */
