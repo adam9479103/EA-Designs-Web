@@ -113,7 +113,7 @@ nav a:hover::after {
     height: 300px; /* Shorter height */
     overflow: hidden;
     position: relative;
-    width: 250;
+    widht: auto;
 }
 
 .custom-furniture-image-container img {
@@ -145,14 +145,14 @@ nav a:hover::after {
 @media (max-width: 768px) {
     .custom-furniture-image-container {
         height: 250px;
-        width: 225px;
+        width: auto;
     }
 }
 
 @media (max-width: 480px) {
     .custom-furniture-image-container {
         height: 200px;
-        width: 170px;
+        width: auto;
     }
 }
 
